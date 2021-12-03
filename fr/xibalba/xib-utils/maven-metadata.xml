@@ -3,10 +3,10 @@
   <groupId>fr.xibalba</groupId>
   <artifactId>xib-utils</artifactId>
   <versioning>
-    <release>0.1-BETA</release>
+    <release>0.2-BETA</release>
     <versions>
-      <version>0.1-BETA</version>
+      <version>0.2-BETA</version>
     </versions>
-    <lastUpdated>20211202171753</lastUpdated>
+    <lastUpdated>20211203163115</lastUpdated>
   </versioning>
 </metadata>
