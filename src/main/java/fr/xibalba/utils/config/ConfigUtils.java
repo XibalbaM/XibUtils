@@ -5,10 +5,13 @@ import java.util.Locale;
 
 public class ConfigUtils {
 
-    public static void classInit(Class toInit) {
+    public static void classInit(Object toInit) {
 
         try {
-            for (Field declaredField : toInit.getDeclaredFields()) {
+            for (Field declaredField : toInit.getClass().getDeclaredFields()) {
+
+                if (!declaredField.isAccessible())
+                    declaredField.setAccessible(true);
 
                 if (declaredField.get(toInit) == null) {
 
